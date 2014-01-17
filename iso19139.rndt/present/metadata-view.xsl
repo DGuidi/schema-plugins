@@ -100,9 +100,9 @@
 							<xsl:apply-templates mode="brief" select="."/>
 						</xsl:variable>
 						<xsl:variable name="metadata" select="exslt:node-set($md)/*[1]"/>
-						<xsl:call-template name="thumbnail">
+						<!--xsl:call-template name="thumbnail">
 							<xsl:with-param name="metadata" select="$metadata"/>
-						</xsl:call-template>
+						</xsl:call-template-->
 					</div>
 				</xsl:if>
 				<xsl:if test="/root/gui/config/editor-metadata-relation">
@@ -283,7 +283,7 @@
 	<!-- =================================================================== -->
 	<!-- Javascript used by functions in this XSLT -->
 	<xsl:template name="iso19139.rndt-javascript">
-		<xsl:call-template name="iso19139-javascript" />
+		<!--xsl:call-template name="iso19139-javascript" /-->
 	</xsl:template>
 	
 	<!-- Do not try do display element with no children in view mode -->
